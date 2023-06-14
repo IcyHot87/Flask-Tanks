@@ -1,0 +1,19 @@
+<style>
+scroll-behavior: smooth;
+body {background: url(/static/WoT_Fon.jpg)no-repeat center center fixed;
+background-size: cover;
+overflow: hidden;}
+h1 {background: dark; color:white}
+</style>
+{% extends 'base.html' %}
+{% block content %}
+   <h1 style="text-align: center">ВВЕДИ  ИМЯ, {{ name }}</h1>
+<body>
+    <form method="post" action="/forma">
+      <label for="strng"></label>
+      <input type="text" name="strng" id="strng">
+      <input type="submit" value="Set Cookie">
+    </form>
+  </body>
+<p style="color: white">Это сайт на Flask</p>
+{% endblock %}
