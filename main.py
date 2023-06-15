@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     strng = request.cookies.get('strng')
     if strng is None:
-        user = "Новобранец"
+        user = "Новобранец"  #Задаем имя пользователя
     else:
         user = strng
     resp = make_response(render_template('index.html', name=user))
